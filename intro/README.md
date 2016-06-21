@@ -11,7 +11,7 @@
 
 **Tree**
 
-<img src="images/tree_terms.jpg" width="300px">
+<img src="images/tree-terms.png" width="300px">
 
 * type of graph
 * rooted (has a single start point)
@@ -29,7 +29,7 @@ Operations for a tree:
 
 **Binary Search Tree (very common in interviews)**
 
-<img src="images/bst.jpg" width="300px">
+<img src="images/bst-example.png" width="300px">
 
 * kind of tree
 * max number of children per node: 2 (a *binary* tree)
@@ -52,11 +52,11 @@ Operations for a binary search tree:
 
 **Trie**
 
-<img src="images/trie.jpg" width="300px">
+<img src="images/trie-example.png" width="400px">
 
 * kind of tree
 * stores sequential data
-* each branch adds to the sequence
+* each node adds to the sequence
 * nodes that are the end of a word or sequence are marked as such
 * height not determined by number of nodes
 
@@ -83,7 +83,7 @@ Do as many of these challenges as you can in 5 minutes. Don't worry if you don't
 
 1. By hand on the whiteboard, create a binary search tree from the following array: [0,1,2,3,4,5,6]. Check that your tree follows the binary search tree property for every subtree: *If it's less, it's to the left.*
 
-1. Create a trie for the following word list: ["hey", "hi"].
+1. Create a trie for the following word list: ["hey", "hi", "yo"].
 
 1. How would you add the phrase "hello, govnuh" to your trie from above?
 
