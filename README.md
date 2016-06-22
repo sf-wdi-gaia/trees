@@ -84,6 +84,7 @@ Operations for a trie:
   * given any node, get a boolean that will be true if the node is the end of a word
   * given any node, get an array of all the nodes that are its children
   
+<hr>
 
 #### Breadth First Tree Traversal
 
@@ -94,6 +95,8 @@ Operations for a trie:
   * spreads across the graph (or tree) like mold on bread, moving outward from its start location
   * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
   * implemented with a queue to track which node to visit next
+  
+<hr>
 
 #### Depth First Tree Traversal
 
