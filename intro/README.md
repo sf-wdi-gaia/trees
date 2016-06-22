@@ -12,22 +12,26 @@
 * edges can be undirected (two-way) or directed (one-way)
 * each node usually has a key and often some extra associated data we care about
 
+Operations for a graph:
+* given a vertex, find all *adjacent* vertices (nodes it's connected to by an edge)
+* given an edge, find the two nodes it connects (and know which is the start node, if the edge is directed)
+
 **Tree**
 
 <img src="images/tree-terms.png" width="300px">
 
 * type of graph
 * rooted (has a single start point)
-* edges/branches usually considered directed (one-way), away from the root
-* acyclic (doesn't allow cycles or circular paths)
-* each node can have only one parent / only one branch leading into it
+* edges/branches usually directed (one-way), away from the root
+* doesn't allow cycles, or circular paths ("acyclic")
+* each node can have only one parent, so only one branch can lead into it
 
 
 
-Operations for a tree:
-  * you can assume you access the root node with `my_tree`
-  * `current_node.key` -> the key of the current node
-  * `current_node.children` -> an array of all the nodes that are children of the current node
+Operations for a tree, with possible method names:
+  * access the root node
+  * get the key of a given node
+  * get an array of all the nodes that are children of a given node
 
 
 **Binary Search Tree (very common in interviews)**
@@ -35,10 +39,10 @@ Operations for a tree:
 <img src="images/bst-example.png" width="300px">
 
 * kind of tree
-* max number of children per node: 2 (a *binary* tree)
+* max number of children per node: 2 (this makes it a "binary" tree)
 * stores data in an easily sorted order (keys have to be sortable)
 * binary search tree property:  
-  * left subtree of any node has all keys less than or equal to the node's key (*If it's less, it's left!*)  
+  * left subtree of any node has all keys less than or equal to the node's key (*If it's less, it's to the left!*)  
   * right subtree of any node has all keys greater than or equal to the node's key  
 * height with `n` nodes:
 	if balanced, `O(log(n))`
@@ -46,10 +50,10 @@ Operations for a tree:
 
 
 Operations for a binary search tree:
-  * you can assume you access the root node with `my_tree`
-  * `current_node.key` -> the key of the current node
-  * `current_node.right_child` -> the right child node of current node
-  * `current_node.left_child` -> the left child node of current node
+  * access the root node
+  * get the key of a given node
+  * get the right child node of a given node
+  * get the left child node of a given node
 
 
 
@@ -65,10 +69,10 @@ Operations for a binary search tree:
 
 
 Operations for a trie:
-  * you can assume you access the root node with `my_trie`
-  * `current_node.key` -> the key of the current node
-  * `current_node.end_of_word` -> boolean, true if this is the end of a word
-  * `current_node.children` -> an array of all the nodes that are children of the current node
+  * access the root node, with `my_trie`
+  * `current_node.key` -> get the key of the current node
+  * `current_node.end_of_word` -> get a boolean, true if this is the end of a word
+  * `current_node.children` -> get an array of all the nodes that are children of the current node
 
 
 ### Today's Challenges
@@ -78,7 +82,7 @@ Today's challenges are set up more like what you might encounter in an actual co
 
 ## Challenges
 
-PLEASE DO NOT CODE UNLESS A CHALLENGE SPECIFICALLY INSTRUCTS YOU TO
+PLEASE DO NOT CODE UNLESS A CHALLENGE SPECIFICALLY INSTRUCTS YOU TO!
 
 ### Base Challenges (5 minutes)
 
@@ -98,14 +102,15 @@ Do as many of these challenges as you can in 5 minutes. Don't worry if you don't
 
 ## Binary Search Tree (15 minutes)
 
-**Get as far in this challenge as you can in 15 minutes.**
+**Get as far in this challenge set as you can in 15 minutes.**
 
 Assume for the following challenges that you have a binary search tree data structure. The data structure allows you to do the following:
 
 * given a tree called `my_bst`, access the "root node" with `my_bst`
-* given any node, find the left child node/subtree of that node with `.left_child` (if none, returns `nil` or `null` or `None`)
-* given any node, find the right child node/subtree of that node with `.right_child` (if none, returns `nil` or `null` or `None`)
-* given any node, find its key with `.key`
+* given a node `current_node`, get the key of the node with `current_node.key`
+* given a node `current_node`, get an array of all the nodes that are children of the node with `current_node.children`
+* given any node, find the left child node/subtree of that node with `current_node.left` (if none, returns `nil` or `null` or `None`)
+* given any node, find the right child node/subtree of that node with `current_node.right` (if none, returns `nil` or `null` or `None`)
 
 
 1. You run a website where users can assign creative names to colors. You store named colors as nodes in a self-balancing binary search tree, where the key of a node is a string with the hex code of its color (for example: `"#30af99"`, `"#c0ffee"`).
