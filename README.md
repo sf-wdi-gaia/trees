@@ -69,7 +69,7 @@ Operations for a binary search tree:
 
 <img src="images/trie-example.png" width="400px" alt="trie storing on, one, tan, tap, tar, two">
 
-*on, one, tan, tap, tar, two*
+*Words in this trie: on, one, tan, tap, tar, two*
 
 * kind of tree
 * stores sequential data
@@ -102,7 +102,7 @@ Operations for a trie:
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif" alt="depth first search animation for tree" width="240px">
 
- * visits nodes by following each path as far (as deep) as it can before backtracking and going to the next path
+ * visits nodes by following each path as far (as deep) as it can before going to the next path
  * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
  * implemented with a stack to track which node to visit next, or implemented recursively
 
