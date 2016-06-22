@@ -11,7 +11,7 @@ In computer science, graphs are collections of **vertices** or **nodes**, which 
 * relationships among users in a social network
 * links between pages on a website
 * finding a route between two locations
-* planning the order of classes to take based on prerequisites 
+* planning the order of classes to take based on prerequisites
 
 A sequence of edges is called a "path".
 
@@ -19,13 +19,13 @@ A sequence of edges is called a "path".
 
 ## Trees
 
-Trees are a special kind of graph with some extra rules about their nodes and edges. First, every tree has a unique, special start node called the "root" node. 
+Trees are a special kind of graph with some extra rules about their nodes and edges. First, every tree has a unique, special start node called the "root" node.
 (We usually draw trees vertically with the "root" node at the top of the tree.)Second, each node in a tree can only ever have one "parent". This means there's only ever one direct path from any node to the root of the tree.  One classic example of a tree is a file sytem, where directories contain other directories and/or files. The `/` directory is called the "root" directory because it's literally the root of the computer's directory tree.  Here are a few other example use cases of trees:
 
 * **the DOM tree**
 * comment trees (where users can comment on comments)
 * data compression algoritm trees (Huffman coding)
-* single-elimination tournaments 
+* single-elimination tournaments
 * parser trees or syntax trees that help a computer interpret human-readable code
 * the way calculators compute order of operations
 
@@ -61,14 +61,14 @@ Balanced trees are another basic variant of trees. A "balanced" tree has a heigh
 
 #### And finally... Balanced Binary Search Trees
 
-Balanced binary search trees combine the balanced structure requirement with the node key requirement of binary search trees.  If an interview question asks about a tree, it's probably a balanced binary search tree. Ask your interview to clarify, though, whether the tree is balanced and whether it is a binary search tree. 
+Balanced binary search trees combine the balanced structure requirement with the node key requirement of binary search trees.  If an interview question asks about a tree, it's probably a balanced binary search tree. Ask your interview to clarify, though, whether the tree is balanced and whether it is a binary search tree.
 
 
 #### Why Are Binary Search Trees Even a Thing?
 
-Below you'll find a table of speeds of common operations for a few of the data structures we've seen: unsorted arrays, sorted arrays, hashes, and binary search trees. The big O notation in the table shows the amortized worst case run time. You may not have a lot of context for big O yet, so before we jump into the main table here's an example. 
+Below you'll find a table of speeds of common operations for a few of the data structures we've seen: unsorted arrays, sorted arrays, hashes, and binary search trees. The big O notation in the table shows the amortized worst case run time. You may not have a lot of context for big O yet, so before we jump into the main table here's an example.
 
-Twitter handles hundreds of millions of tweets each day.  (Computers can halde about a billion operations per second, but an algorithm usually requries more than one operation to handle each input.)  If Twitter has an <i>O</i>(<i>n</i>) algorithm that somehow processes all these tweets in about 40 seconds, changing to an <i>O</i>(log&nbsp;<i>n</i>) algorithm could reduce that time to just over 5 seconds (that kind of savings adds up!). An <i>O</i>(<i>n</i>&nbsp;log&nbsp;<i>n</i>) algorithm might take about 3.5 minutes. 
+Twitter handles hundreds of millions of tweets each day.  (Computers can halde about a billion operations per second, but an algorithm usually requries more than one operation to handle each input.)  If Twitter has an <i>O</i>(<i>n</i>) algorithm that somehow processes all these tweets in about 40 seconds, changing to an <i>O</i>(log&nbsp;<i>n</i>) algorithm could reduce that time to just over 5 seconds (that kind of savings adds up!). An <i>O</i>(<i>n</i>&nbsp;log&nbsp;<i>n</i>) algorithm might take about 3.5 minutes.
 
 <table>
 <tbody>
@@ -133,7 +133,7 @@ Twitter handles hundreds of millions of tweets each day.  (Computers can halde a
 
 ### N-ary or K-ary Trees
 
-N-ary trees don't have to be binary; their nodes can have more than two children. These are also known as "just regular trees" and have the characteristics defined for all trees above. 
+N-ary trees don't have to be binary; their nodes can have more than two children. These are also known as "just regular trees" and have the characteristics defined for all trees above.
 
 ### Tries
 
@@ -150,17 +150,17 @@ Specialized tries that store data in binary format (as sequences of 0s and 1s) a
 
 * Make sure you know whether a tree you're given is binary, self-balancing, a binary search tree. Or, if you're using a tree, clarify which of these properties you want it to have.   
 * Be clear about what each node's key is and what other data is stored in the node.   
-* Consider storing extra data about the tree inside each node. For example, if you need to find the kth heighest value in a binary search tree, a classic way to go about it is to have each node store the size of its subtree. 
+* Consider storing extra data about the tree inside each node. For example, if you need to find the kth heighest value in a binary search tree, a classic way to go about it is to have each node store the size of its subtree.
 
-## Vocab Practice 
+## Vocab Practice
 
 
 1. Use the diagram below to fill in the following table:
-	
+
 	| Node  | parent | left child | right child |
-	| :---- | :-- | :-- | :-- | 
-	| A |  |   |  | 
-	| B |  |  |  | 
+	| :---- | :-- | :-- | :-- |
+	| A |  |   |  |
+	| B |  |  |  |
 	| C |  |   |   |
 
 
@@ -170,34 +170,34 @@ Specialized tries that store data in binary format (as sequences of 0s and 1s) a
 
 
 1. Finally, in that same diagram, what is the height of the tree?
- 
+
   <br><br>
 
 1. Which of the following is a tree? (There may be more than one.)
 
   <img src="images/which_tree.jpg" width="300px">
-  
+
 
 1. Which of the following is a balanced tree? (There may be more than one.)
 
   <img src="images/which_balanced.jpg" width="300px">
-  
- 
+
+
 
 1. Which of the following is a binary search tree? (There may be more than one.)
 
   <img src="images/which_bst.jpg" width="300px">
-  
-  
+
+
 
 ## Vocab Practice **Solutions**
 
 1. Use the diagram below to fill in the following table:
-	
+
 	| Node  | parent | left child | right child |
-	| :---- | :-- | :-- | :-- | 
-	| A | *B* | *none*  | *none*  | 
-	| B | *D* | *A* | *C* | 
+	| :---- | :-- | :-- | :-- |
+	| A | *B* | *none*  | *none*  |
+	| B | *D* | *A* | *C* |
 	| C | *B* |  *none* |  *none* |
 
 
@@ -215,24 +215,24 @@ Specialized tries that store data in binary format (as sequences of 0s and 1s) a
 1. Which of the following is a tree? (There may be more than one.)
 
   <img src="images/which_tree.jpg" width="300px">
-  
+
   *B, D, E are trees.*
-  
-  *A is not a tree because one node has 2 parents.* 
-  
+
+  *A is not a tree because one node has 2 parents.*
+
   *C is not a tree because there is a cycle (a circular path from one node back to that same node).*
-  
+
   *F is not a tree because it's 2 trees! This is called a "forest".*
-  
-  
+
+
 1. Which of the following is a balanced tree? (There may be more than one.)
 
   <img src="images/which_balanced.jpg" width="300px">
-  
+
   *B, D, and C are balanced because all of the "missing children" in these trees are either at the bottom level or one level above.*
 
 1. Which of the following is a binary search tree? (There may be more than one.)
 
   <img src="images/which_bst.jpg" width="300px">
-  
+
   *Only the tree rooted with 6 is a binary search tree. The others both have nodes in the root's left subtree that are greater than the root node.*
