@@ -1,11 +1,8 @@
-### Tree Practice
+# Tree Practice
 
 Many of these challenges are set up more like what you might encounter in an actual coding interview. We expect you to work in teams of 2 or 3 and do each problem on the whiteboard or the table.  We'll have a very limited time to work on each problem in class, and we'll go over the problems after.  Please do not look at the solutions or look up solutions to these problems online during the drills this morning.
 
-
-## Challenges
-
-PLEASE DO NOT CODE UNLESS A CHALLENGE SPECIFICALLY INSTRUCTS YOU TO!
+PLEASE DO NOT CODE UNLESS A PROBLEM SPECIFICALLY INSTRUCTS YOU TO!
 
 ### Base Challenges (5 minutes)
 
