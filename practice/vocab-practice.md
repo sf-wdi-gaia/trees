@@ -21,7 +21,7 @@
 	</details>
 
 
-  <img src="images/labels.jpg" width="300px">
+  <img src="../images/labels.jpg" width="300px">
 
 1. In the same diagram (above), which node is the root?  Which are leaves?
 
@@ -38,7 +38,7 @@
 
 1. Which of the following is a tree? (There may be more than one.)
 
-  <img src="images/which_tree.jpg" width="300px">
+  <img src="../images/which_tree.jpg" width="300px">
 
   <details><summary>click for solution</summary>
   *B, D, E are trees.*
@@ -53,7 +53,7 @@
 
 1. Which of the following is a balanced tree? (There may be more than one.)
 
-  <img src="images/which_balanced.jpg" width="300px">
+  <img src="../images/which_balanced.jpg" width="300px">
 
   <details><summary>click for solution</summary>
   *B, D, and C are balanced because all of the "missing children" in these trees are either at the bottom level or one level above.*
@@ -61,7 +61,7 @@
 
 1. Which of the following is a binary search tree? (There may be more than one.)
 
-  <img src="images/which_bst.jpg" width="300px">
+  <img src="../images/which_bst.jpg" width="300px">
 
   <details><summary>click for solution</summary>
   *Only the tree rooted with 6 is a binary search tree. The others both have nodes in the root's left subtree that are greater than the root node.*
