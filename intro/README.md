@@ -11,7 +11,7 @@
 
 **Tree**
 
-<img src="images/tree-terms.png" width="300px">
+<img src="images/tree-terms.png" width="400px">
 
 * type of graph
 * rooted (has a single start point)
