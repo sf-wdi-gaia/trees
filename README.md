@@ -1,7 +1,5 @@
 # Trees: Quick Reference
 
-<hr>
-
 #### Graph
 
 
@@ -57,7 +55,7 @@ Uses of trees:
   * if balanced, `O(log(n))`  
   * if not balanced, `O(n)`
 
-*A balanced binary search tree is as short as it can be - it has "missing children" only on its bottom level and the level right above the bottom. We care because shorter trees are faster, so <strong>balanced</strong> binary search trees are faster than unbalanced!*
+*A <strong>balanced</strong> binary search tree is as short as it can be - it has "missing children" only on its bottom level and the level right above the bottom. We care because many of the things we like to do with trees take less time if the tree is shorter!*
 
 Operations for a binary search tree:
   * access the root node
