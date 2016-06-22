@@ -4,9 +4,8 @@ Many of these challenges are set up more like what you might encounter in an act
 
 PLEASE DO NOT CODE UNLESS A PROBLEM SPECIFICALLY INSTRUCTS YOU TO!
 
-### Base Challenges (5 minutes)
+### Base Challenges 
 
-Do as many of these challenges as you can in 5 minutes. Don't worry if you don't finish them all.
 
 1. In an "adjacency list," each node is associated with a list of nodes it has edges going to. Here's an example adjacency list and graph:
 
@@ -28,9 +27,8 @@ Do as many of these challenges as you can in 5 minutes. Don't worry if you don't
 
 1. A "min heap" is another data structure often thought of as a type of binary tree. It has a few additional restrictions, including one called the "min heap property:" every node's key is less than the keys of its children. What is special about the root of a min heap?  
 
-### Binary Search Tree (15 minutes)
+### Binary Search Tree 
 
-**Get as far in this challenge set as you can in 15 minutes.**
 
 Assume for the following challenges that you have a binary search tree data structure.
 
@@ -45,10 +43,18 @@ Assume for the following challenges that you have a binary search tree data stru
  a) What will you choose as the key of each node to make it easy to sort the books by their ratings? What is one other value you'd want to store in the node, in addition to the key?
 
  b) As a first step to automating your book selection process, pseudocode a `max`function to find the book in the tree with the highest rating. Your function should take the tree as its only argument.
+ 
+ 
+### Tree
 
-### Trie (15 minutes)
 
-**Get as far in this challenge as you can in 15 minutes.**
+Assume for the following challenge that you have a tree data structure. As a special bonus operation not always available in trees, you can find the parent of a given node with `.parent` (the parent of the root node is `None`)
+
+1. Given the names of two people in a military group, and a tree that represents the military hierarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  This is often called a  `lowest_common_ancestor` function.
+
+
+### Trie
+
 
 Assume you have a `Trie` data structure.
 
@@ -56,11 +62,3 @@ Assume you have a `Trie` data structure.
 
 1. Once a user has typed in the first few letters of a flavor, you'd like to be able to suggest the possible full flavor names. (For example, typing "CO" would suggest "coffee", "coconut", and "cookies & cream".) Describe an algorithm you could use to return an array containing all of the flavors in your trie that start with a given letter sequence.
 
-
-### Tree
-
-**Get as far in this challenge as you can in 15 minutes.**
-
-Assume for the following challenge that you have a tree data structure. As a special bonus operation not always available in trees, you can find the parent of a given node with `.parent` (the parent of the root node is `None`)
-
-1. Given the names of two people in a military group, and a tree that represents the military hierarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  This is often called a  `lowest_common_ancestor` function.
