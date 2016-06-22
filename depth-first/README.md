@@ -6,7 +6,7 @@ Depth First Search is another algorithm that searches through (potentially) ever
 
 Depth First Search follows an "always go left" path like some people use to systematically solve mazes. 
 
-![depth first search animation](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif)
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif" alt="depth first search animation for tree" width="300px">
 
 Breadth First Search used a queue (first in is first out) to keep track of which nodes to visit next.  Depth First Search, at least in its iterative form, uses a stack (first in is last out).
 
