@@ -1,7 +1,5 @@
 # Trees: Quick Reference
 
-<hr>
-
 #### Graph
 
 
@@ -57,7 +55,7 @@ Uses of trees:
   * if balanced, `O(log(n))`  
   * if not balanced, `O(n)`
 
-*A balanced binary search tree is as short as it can be - it has "missing children" only on its bottom level and the level right above the bottom. We care because shorter trees are faster, so <strong>balanced</strong> binary search trees are faster than unbalanced!*
+*A <strong>balanced</strong> binary search tree is as short as it can be - it has "missing children" only on its bottom level and the level right above the bottom. We care because many of the things we like to do with trees take less time if the tree is shorter!*
 
 Operations for a binary search tree:
   * access the root node
@@ -71,7 +69,7 @@ Operations for a binary search tree:
 
 <img src="images/trie-example.png" width="400px" alt="trie storing on, one, tan, tap, tar, two">
 
-*on, one, tan, tap, tar, two*
+*Words in this trie: on, one, tan, tap, tar, two*
 
 * kind of tree
 * stores sequential data
@@ -85,3 +83,29 @@ Operations for a trie:
   * given any node, get its key
   * given any node, get a boolean that will be true if the node is the end of a word
   * given any node, get an array of all the nodes that are its children
+  
+<hr>
+
+#### Breadth First Tree Traversal
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif" alt="breadth first search animation for tree" width="240px">
+
+  * visits nodes in order of how far they are from the start, closest nodes first 
+  * doesn't make any assumptions about the relationships among nodes' keys
+  * spreads across the graph (or tree) like mold on bread, moving outward from its start location
+  * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
+  * implemented with a queue to track which node to visit next
+  
+<hr>
+
+#### Depth First Tree Traversal
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif" alt="depth first search animation for tree" width="240px">
+
+ * visits nodes by following each path as far (as deep) as it can before going to the next path
+ * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
+ * implemented with a stack to track which node to visit next, or implemented recursively
+
+
+
+
