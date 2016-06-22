@@ -6,9 +6,9 @@ Breadth First Search is more general -- it doesn't make any assumptions about th
 
 **Breadth First Search chooses a start node and "visits" every node of a graph in order of how many edges the node is from that start.**  In a tree, we pick the root as the start node. We'll also consider each node to be the same "length." In graph terms, that means the "weight" of each edge is the same. Breadth first search only works for graphs with unweighted edges or graphs where all the edge weights are the same.
 
-Breadth First Search spreads like a mold across the tree or graph, moving outward one step at a time from its start location.  
+Breadth First Search spreads across the tree or graph like mold on bread, moving outward one step at a time from its start location.  Pay attention to the order nodes are turning black in the animation below. 
 
-![breadth first search animation](https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif)
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif" alt="breadth first search animation for tree" width="300px">
 
 
 ## Exercises: Breadth First Tree Search
