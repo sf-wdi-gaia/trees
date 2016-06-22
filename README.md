@@ -1,6 +1,4 @@
-# Trees!
-
-### Introduction/Quick Reference
+# Trees: Quick Reference
 
 #### Graph
 
@@ -21,6 +19,7 @@ Uses of graphs:
  * route planning
  * goal-seeking artificial intelligence
 
+<hr>
 
 #### Tree
 
@@ -44,6 +43,7 @@ Uses of trees:
   * representing hierarchies like a company's direct reporting structure
   * keeping track of data that is too large to fit in one chunk in a computer's memory (like most files)
 
+<hr>
 
 #### Binary Search Tree
 **very common in interviews**
@@ -71,6 +71,7 @@ Operations for a binary search tree:
 Uses of binary search trees:
   * storing sorted data
 
+<hr>
 
 #### Trie
 
