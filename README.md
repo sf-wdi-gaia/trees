@@ -1,5 +1,7 @@
 # Trees: Quick Reference
 
+<hr>
+
 #### Graph
 
 
@@ -13,11 +15,6 @@
 Operations for a graph:
 * given a vertex, find all *adjacent* vertices (nodes it's connected to by an edge)
 * given an edge, find the two nodes it connects (and know which is the start node, if the edge is directed)
-
-Uses of graphs:
- * flow charts
- * route planning
- * goal-seeking artificial intelligence
 
 <hr>
 
@@ -68,9 +65,6 @@ Operations for a binary search tree:
   * get the right child node of a given node (or `None` if there isn't one!)
   * get the left child node of a given node (or `None` if there isn't one)
 
-Uses of binary search trees:
-  * storing sorted data
-
 <hr>
 
 #### Trie
@@ -91,7 +85,3 @@ Operations for a trie:
   * given any node, get its key
   * given any node, get a boolean that will be true if the node is the end of a word
   * given any node, get an array of all the nodes that are its children
-
-Uses of tries:
-  * autocomplete
-  * spell checking
