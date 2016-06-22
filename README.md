@@ -83,3 +83,26 @@ Operations for a trie:
   * given any node, get its key
   * given any node, get a boolean that will be true if the node is the end of a word
   * given any node, get an array of all the nodes that are its children
+  
+
+#### Breadth First Tree Traversal
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Animated_BFS.gif" alt="breadth first search animation for tree" width="240px">
+
+  * visits nodes in order of how far they are from the start, closest nodes first 
+  * doesn't make any assumptions about the relationships among nodes' keys
+  * spreads across the graph (or tree) like mold on bread, moving outward from its start location
+  * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
+  * implemented with a queue to track which node to visit next
+
+#### Depth First Tree Traversal
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif" alt="depth first search animation for tree" width="240px">
+
+ * visits nodes by following each path as far (as deep) as it can before backtracking and going to the next path
+ * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
+ * implemented with a stack to track which node to visit next, or implemented recursively
+
+
+
+
