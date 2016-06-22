@@ -1,11 +1,8 @@
-### Tree Practice
+# Tree Practice
 
 Many of these challenges are set up more like what you might encounter in an actual coding interview. We expect you to work in teams of 2 or 3 and do each problem on the whiteboard or the table.  We'll have a very limited time to work on each problem in class, and we'll go over the problems after.  Please do not look at the solutions or look up solutions to these problems online during the drills this morning.
 
-
-## Challenges
-
-PLEASE DO NOT CODE UNLESS A CHALLENGE SPECIFICALLY INSTRUCTS YOU TO!
+PLEASE DO NOT CODE UNLESS A PROBLEM SPECIFICALLY INSTRUCTS YOU TO!
 
 ### Base Challenges (5 minutes)
 
@@ -31,7 +28,7 @@ Do as many of these challenges as you can in 5 minutes. Don't worry if you don't
 
 1. A "min heap" is another data structure often thought of as a type of binary tree. It has a few additional restrictions, including one called the "min heap property:" every node's key is less than the keys of its children. What is special about the root of a min heap?  
 
-## Binary Search Tree (15 minutes)
+### Binary Search Tree (15 minutes)
 
 **Get as far in this challenge set as you can in 15 minutes.**
 
@@ -49,7 +46,7 @@ Assume for the following challenges that you have a binary search tree data stru
 
  b) As a first step to automating your book selection process, pseudocode a `max`function to find the book in the tree with the highest rating. Your function should take the tree as its only argument.
 
-## Trie (15 minutes)
+### Trie (15 minutes)
 
 **Get as far in this challenge as you can in 15 minutes.**
 
@@ -61,6 +58,8 @@ Assume you have a `Trie` data structure.
 
 
 ### Tree
+
+**Get as far in this challenge as you can in 15 minutes.**
 
 Assume for the following challenge that you have a tree data structure. As a special bonus operation not always available in trees, you can find the parent of a given node with `.parent` (the parent of the root node is `None`)
 
