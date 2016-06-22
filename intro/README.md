@@ -4,6 +4,9 @@
 
 **Graph**
 
+
+<img src="images/graph-terms.png" width="300px">
+
 * stores data in vertices (nodes)
 * vertices connected by edges that signify relationships or transitions
 * edges can be undirected (two-way) or directed (one-way)
@@ -11,7 +14,7 @@
 
 **Tree**
 
-<img src="images/tree-terms.png" width="400px">
+<img src="images/tree-terms.png" width="300px">
 
 * type of graph
 * rooted (has a single start point)
