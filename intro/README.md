@@ -52,8 +52,8 @@ Operations for a tree, with possible method names:
 Operations for a binary search tree:
   * access the root node
   * get the key of a given node
-  * get the right child node of a given node
-  * get the left child node of a given node
+  * get the right child node of a given node (or `None` if there isn't one!)
+  * get the left child node of a given node (or `None` if there isn't one)
 
 
 
@@ -64,15 +64,15 @@ Operations for a binary search tree:
 * kind of tree
 * stores sequential data
 * each node adds to the sequence
-* nodes that are the end of a word or sequence are marked as such
+* nodes that are the end of a word or sequence are marked
 * height not determined by number of nodes
 
 
 Operations for a trie:
-  * access the root node, with `my_trie`
-  * `current_node.key` -> get the key of the current node
-  * `current_node.end_of_word` -> get a boolean, true if this is the end of a word
-  * `current_node.children` -> get an array of all the nodes that are children of the current node
+  * access the root node
+  * get the key of a given node
+  * given any node, get a boolean which will be true if this node is the end of a word
+  * given any node, get an array of all the nodes that are its children
 
 
 ### Today's Challenges
@@ -92,66 +92,41 @@ Do as many of these challenges as you can in 5 minutes. Don't worry if you don't
 
 1. Create a trie for the following word list: ["hey", "hi", "yo"].
 
-1. How would you add the phrase "hello, govnuh" to your trie from above?
+1. How would you add the phrase "hello, govnuh" to your trie from above? (You don't have to draw this all out.)
 
 1. What determines the height of a trie?  
 
 1. How would you find the minimum value in a binary search tree?
 
-1. A "min heap" is another abstract data structure often thought of as a type of binary tree. It has a few additional restrictions, including one called the "min heap property:" every node's key is less than the keys of its children. What is special about the root of a min heap?  
+1. A "min heap" is another data structure often thought of as a type of binary tree. It has a few additional restrictions, including one called the "min heap property:" every node's key is less than the keys of its children. What is special about the root of a min heap?  
 
 ## Binary Search Tree (15 minutes)
 
 **Get as far in this challenge set as you can in 15 minutes.**
 
-Assume for the following challenges that you have a binary search tree data structure. The data structure allows you to do the following:
+Assume for the following challenges that you have a binary search tree data structure. 
 
-* given a tree called `my_bst`, access the "root node" with `my_bst`
-* given a node `current_node`, get the key of the node with `current_node.key`
-* given a node `current_node`, get an array of all the nodes that are children of the node with `current_node.children`
-* given any node, find the left child node/subtree of that node with `current_node.left` (if none, returns `nil` or `null` or `None`)
-* given any node, find the right child node/subtree of that node with `current_node.right` (if none, returns `nil` or `null` or `None`)
+1. You run a website where users can assign creative names to colors. You store named colors as nodes in a balanced binary search tree, where the key of a node is a string with the hex code of its color (example keys:  `"#30af99"`, `"#c0ffee"`). Users shouldn't be able to change the name of a color, so your goal is to check if a color is already in the tree.  Pseudocode a `has_key` function to check if a particular hex value is already in the tree.  If the key is in the tree, your function should return `true`. If the key is not in the tree, your function should return `false`. Your function should take the tree and the target hex color key as arguments.
 
 
-1. You run a website where users can assign creative names to colors. You store named colors as nodes in a self-balancing binary search tree, where the key of a node is a string with the hex code of its color (for example: `"#30af99"`, `"#c0ffee"`).
-
-  Users shouldn't be able to change the name of a color.  Pseudocode a `has_key` function to check if a particular hex value is already in the tree.  If the key is in the tree, your function should return `true`. If the key is not in the tree, your function should return `false`. Your function should take the tree and the hex color key as arguments.
+1. Pseudocode an `insert_if_free` function to check if the color exists *and* insert it if it's not already in the tree. If the key is not in the tree, your function should add it to the tree and return `true` (notice this is the reverse of what `has_key` returns).  If the key is already in the tree, your function should return `false`. Your function should take the tree as one argument and the information about the new color as one or more other arguments.  Don't worry about maintaining the balance of the tree; just insert the new node at any valid location.
 
 
-	Stretch Version: Pseudocode an `insert_if_free` function to check if the color exists *and* insert it if it's not already in the tree. If the key is not in the tree, your function should add it to the tree and return `true` (notice this is the reverse of what `has_key` returns).  If the key is already in the tree, your function should return `false`. Your function should take the tree as one argument and the information about the new color as one or more other arguments.  Don't worry about maintaining the balance of the tree; just insert the new node at any valid location.
-
-
-1. You follow a favorite literary critic's book ratings very closely.  In particular, you keep a self-balancing binary search tree of all the critic's reviews, where each node's key is the rating given by the critic to that node's book.  Every time the critic publishes a new book review, you add it to the tree. Every time you finish reading your current book, you read the next highest-rated book. As a first step to automating your book selection process, pseudocode a `max`function to find the book in the tree with the highest rating. Your function should take the tree as its argument.
+<!--1. You follow a favorite literary critic's book ratings very closely.  In particular, you keep a self-balancing binary search tree of all the critic's reviews, where each node's key is the rating given by the critic to that node's book.  Every time the critic publishes a new book review, you add it to the tree. Every time you finish reading your current book, you read the next highest-rated book. As a first step to automating your book selection process, pseudocode a `max`function to find the book in the tree with the highest rating. Your function should take the tree as its argument.-->
 
 ## Trie (15 minutes)
 
 **Get as far in this challenge as you can in 15 minutes.**
 
-Assume you have a `Trie` data structure. The data structure allows you to do the following:
+Assume you have a `Trie` data structure.
 
-* given a tree called `my_trie`, access the empty root node with `my_trie`
-* given any node, find an array containing all its children with `.children` (if none, returns an empty array)
-* given any node, find its symbol with `.symbol`
-* given any node, check whether it is the end of a word with `.end_of_word`
+1. Your frozen yogurt site has a list of flavor options that users can choose from. You've already converted the list of flavors to a trie, but now the frozen yogurt vendor wants to add new flavors. Describe an algorithm to insert a new flavor into the trie. It should existing letter sequences if all or part of the flavor name is already in the tree.
 
-1. Your site has a list of options users can choose for frozen yogurt flavor. You've already converted the list to a trie, but now the frozen yogurt vendor wants to be able to add new flavors. Describe an algorithm to insert a new flavor into the trie. It should not add the flavor again if it's already in the trie.
-
-1. Once a user has typed in the first few letters of a flavor, you'd like to be able to suggest the possible full flavor names. (For example, "CO" would suggest "coffee", "coconut", and "cookies & cream".) In words, describe an algorithm you could use to find all of the flavors that start with a given letter sequence.
+1. Once a user has typed in the first few letters of a flavor, you'd like to be able to suggest the possible full flavor names. (For example, typing "CO" would suggest "coffee", "coconut", and "cookies & cream".) Describe an algorithm you could use to return an array containing all of the flavors in your trie that start with a given letter sequence.
 
 
-### Tree
+<!--### Tree-->
 
-Assume for the following challenge that you have a recursive tree data structure.
+<!--Assume for the following challenge that you have a tree data structure. As a special bonus operation not always available in trees, you can find the parent of a given node with `.parent` (the parent of the root node is `None`)-->
 
-The constructor for a `Tree` instance requires that you specify the key for the current node, and it sets `children` list of the node to an empty array.
-
-The data structure allows you to do the following:
-
-* given a tree called `my_tree`, access the "root node" with `my_tree`
-* given any node, find an array containing all its children with `.children`
-* given any node, find its key with `.key`
-
-In addition, as a special bonus not always available in trees, you can:   
-* given any node, find its parent node with `.parent` (the parent of the root node is `None`)
-
-1. Given the names of two people in a military group, and a tree that represents the military hierarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  This is often called a  `lowest_common_ancestor` function.
+<!--1. Given the names of two people in a military group, and a tree that represents the military hierarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  This is often called a  `lowest_common_ancestor` function.-->
