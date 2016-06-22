@@ -31,7 +31,7 @@ Trees are a special kind of graph with some extra rules about their nodes and ed
 
 The edges in a tree are sometimes referred to as "branches".  Nodes of the tree that do not have any children are called "leaves" because no branches lead away from them. The length of the longest path from the root to a leaf is called the tree's "height".
 
-<img src="images/tree_terms.jpg" width="300px">
+<img src="images/tree-terms.png" width="300px">
 
 
 Tree data structures adopt language from family trees. If an edge in a tree connects two nodes, the one closer to the root is the "parent", and the other is a "child".  From the perspective of a single node, some other nodes will be on the path between that node and the root. These are the node's "ancestors." Other nodes might be children of the  node, or children of the node's children. These are called the node's "descendants."  Nodes that share the same "parent" can be called "siblings," but that's rarer.
@@ -52,7 +52,7 @@ The most common types of trees for interviews are "binary trees," which allow ea
 Binary search trees add on an extra restriction to binary trees. In each node's left child subtree (if it has one), all nodes will will have keys *less* than the original node's key.  In each node's right child subtree (if it has one), all nodes must have a **greater** key than the original node itself. Left is less!
 
 
-<img src="images/bst.jpg" width="300px">
+<img src="images/bst-example.png" width="300px">
 
 
 #### Balanced Trees
@@ -139,7 +139,7 @@ N-ary trees don't have to be binary; their nodes can have more than two children
 
 Tries, also called prefix trees, store data differently than other trees we'll look at. The data is only stored in the leaves, and it builds up over the path from the root to each leaf.   Here's an example:
 
-<img src="images/trie.jpg" width="300px">
+<img src="images/trie-example.png" width="300px">
 
 Usually the end of each word in a trie will be marked, or there will be special end of word nodes that signify the end of a word.
 
