@@ -19,15 +19,6 @@ PLEASE DO NOT CODE UNLESS A PROBLEM SPECIFICALLY INSTRUCTS YOU TO!
 
 1. A "min heap" is another data structure often thought of as a type of binary tree. It has a few additional restrictions, including one called the "min heap property:" every node's key is less than the keys of its children. What is special about the root of a min heap?  
 
-
-### Trie Warmup
-
-1. Create a trie for the following word list: ["hey", "hi", "yo"].
-
-1. How would you add the phrase "hello, govnuh" to your trie from above?
-
-1. What determines the height of a trie?  
-
 ### Binary Search Tree Tasks
 
 Assume you have a binary search tree data structure.
@@ -45,7 +36,7 @@ Assume you have a binary search tree data structure.
  b) As a first step to automating your book selection process, pseudocode a `max`function to find the book in the tree with the highest rating. Your function should take the tree as its only argument.
  
  
-### Tree
+### Tree Tasks
 
 
 Assume you have a tree data structure. As a special bonus operation not always available in trees, you can find the parent of a given node with `.parent` (the parent of the root node is `None`)
@@ -53,7 +44,16 @@ Assume you have a tree data structure. As a special bonus operation not always a
 1. Given the names of two people in a military group, and a tree that represents the military hierarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  This is often called a  `lowest_common_ancestor` function.
 
 
-### Trie
+### Trie Warmup
+
+1. Create a trie for the following word list: ["hey", "hi", "yo"].
+
+1. How would you add the phrase "hello, govnuh" to your trie from above?
+
+1. What determines the height of a trie?  
+
+
+### Trie Tasks
 
 
 Assume you have a trie data structure.
