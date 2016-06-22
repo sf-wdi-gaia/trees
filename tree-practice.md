@@ -44,6 +44,9 @@ Assume you have a tree data structure. As a special bonus operation not always a
 1. Given the names of two people in a military group, and a tree that represents the military hierarchy, your task is to find the lowest-rank person who commands both of the other people (this excludes the people themselves). If there is no such person, return `None`.  This is often called a  `lowest_common_ancestor` function.
 
 
+<br>
+<hr>
+
 ### Trie Warmup
 
 1. Create a trie for the following word list: ["hey", "hi", "yo"].
