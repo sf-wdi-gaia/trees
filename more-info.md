@@ -147,6 +147,7 @@ Specialized tries that store data in binary format (as sequences of 0s and 1s) a
 
 ## Tree Strategies for Interviews
 
+* Memorize the time complexity of common tree problems, like searching for a key in a balanced binary search tree. 
 * Make sure you know whether a tree you're given is binary, self-balancing, a binary search tree. Or, if you're the one who decided to use a tree, clarify which of these properties you want it to have.   
 * Be clear about what each node's key is and what other data is stored in the node.   
 * Consider storing extra data about the tree inside each node. For example, if you need to find the `k`th heighest value in a binary search tree, a classic way to go about it is to have each node store the size of its subtree.
