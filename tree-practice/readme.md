@@ -7,7 +7,7 @@ Many of these tasks are like what you might encounter in a coding interview. We 
 ### Tree and Binary Search Tree Warmup
 
 
-1. In an "adjacency list," each node is associated with a list of nodes it has edges going to. Here's an example adjacency list and the tree it represents:
+1. Graphs aren't always stored in an object-oriented way.  In an "adjacency list" representation, each node is associated with a list of nodes it has edges going to. Here's an example adjacency list and the tree it represents:
 
   <img src="../images/adjacency-list.png" width="500px">
 
