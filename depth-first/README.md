@@ -6,11 +6,34 @@ Depth First Search is another algorithm that searches through (potentially) ever
 
 Depth First Search follows an "always go left" path like some people use to systematically solve mazes. 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif" alt="depth first search animation for tree" width="300px">
-
 Breadth First Search used a queue (first in is first out) to keep track of which nodes to visit next.  Depth First Search, at least in its iterative form, uses a stack (first in is last out).
 
-Depth First Search can be done recursively, or iteratively with a stack. The iterative version translates more easily to graphs that might have loops (after you see both versions, think about why that is).
+Depth First Search can also be done recursively. However, the iterative version translates more easily to graphs that might have loops (after you see both versions, think about why that is).
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif" alt="depth first search animation for tree" width="300px">
+
+What's happening in that animation?
+
+```
+node stack starts with just the root:  
+	[1]
+visit the last node, pushing its children to the stack (child order reversed to match gif but either works): 
+	[1, 9, 5, 2]  
+visit the last node, pushing its children to the stack:
+	[1, 9, 5, 2, 3]
+visit the last node, pushing its children to the stack:
+	[1, 9, 5, 2, 3, 4]
+visit the last node, but it has no unvisited children. so pop it out
+	[1, 9, 5, 2, 3] 	=> 4
+visit the last node, but it has no unvisited children. so pop it out
+	[1, 9, 5, 2]  		=> 3
+visit the last node, but it has no unvisited children. so pop it out
+	[1, 9, 5]  			=> 2
+visit the last node, pushing its children to the stack:
+	[1, 9, 5, 6, 8]  
+... and so on until the stack is empty!
+```
 
 
 ## Exercises: Depth First Tree Search
