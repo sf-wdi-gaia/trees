@@ -36,7 +36,7 @@ keep repeating until the stack is empty:
 	[1, 9, 10]
 	[1, 9]				=> 10
 	[1] 				=> 9
-	[]				=> 1
+	[]					=> 1
 ```
 
 
