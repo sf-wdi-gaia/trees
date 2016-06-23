@@ -1,6 +1,6 @@
 # Tree Practice
 
-Many of these tasks are like what you might encounter in a coding interview. We expect you to work in teams of 2 or 3 and do each problem on the whiteboard or the table.  We'll have a very limited time to work on each problem in class, and we'll go over the problems after.  These tasks are difficult, so please challenge yourself not to look up solutions online until after today's drills.
+Many of these tasks are like what you might encounter in a coding interview. We expect you to work in teams of 2 or 3 and do each problem on the whiteboard or the table.  We'll have a very limited time to work on each problem in class, and we'll go over the problems after.  These tasks are difficult, so please challenge yourself not to look at the solutions or look up solutions online until after you've attempted these tasks in drills.
 
 PLEASE DO NOT CODE UNLESS A PROBLEM SPECIFICALLY INSTRUCTS YOU TO!
 
