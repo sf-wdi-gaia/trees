@@ -1,8 +1,8 @@
-# Breadth First Search
+# Breadth First
 
-Breadth First Search is an algorithm for searching through graphs, looking for one or more nodes that meet some search criteria. With `has_key`, we saw a strategy to search for a particular key in a binary search tree, taking advantage of the fact that each node's left subtree contains smaller keys and each node's right subtree contains larger keys.  
+Breadth First Search is an algorithm for searching through graphs, looking for one or more nodes that meet some search criteria. Breadth first ordering can also be used to traverse a graph, that is, to visit all of its nodes.
 
-Breadth First Search is more general -- it doesn't make any assumptions about the relationships among nodes' keys. In fact, we can search by criteria that aren't based on keys at all. With the tree of hex color names, we could use Breadth First Search to find all of the colors created by one user.
+When searching for a particular key in a binary search tree, we can take advantage of the fact that each node's left subtree contains smaller keys and each node's right subtree contains larger keys. Breadth First Search is more general -- it doesn't make any assumptions about the relationships among nodes' keys. In fact, we can search by criteria that aren't based on keys at all. 
 
 **Breadth First Search chooses a start node and "visits" every node of a graph in order of how many edges the node is from that start.**  In a tree, we pick the root as the start node. We'll also consider each node to be the same "length." In graph terms, that means the "weight" of each edge is the same. Breadth first search only works for graphs with unweighted edges or graphs where all the edge weights are the same.
 
