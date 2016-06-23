@@ -33,10 +33,6 @@ Operations for a tree:
   * get the key of a given node
   * get an array of all the nodes that are children of a given node
 
-Uses of trees:
-  * modeling decision-making processes over time
-  * representing hierarchies like a company's direct reporting structure
-  * keeping track of data that is too large to fit in one chunk in a computer's memory (like most files)
 
 <hr>
 
@@ -95,7 +91,10 @@ Operations for a trie:
   * spreads across the graph (or tree) like mold on bread, moving outward from its start location
   * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
   * implemented with a queue to track which node to visit next
-  
+ 
+
+
+
 <hr>
 
 #### Depth First Tree Traversal
