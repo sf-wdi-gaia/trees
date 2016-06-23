@@ -9,7 +9,7 @@ PLEASE DO NOT CODE UNLESS A PROBLEM SPECIFICALLY INSTRUCTS YOU TO!
 
 1. In an "adjacency list," each node is associated with a list of nodes it has edges going to. Here's an example adjacency list and the tree it represents:
 
-  <img src="images/adjacency-list.png" width="500px">
+  <img src="../images/adjacency-list.png" width="500px">
 
   Redraw the graph with this additional information:  `"E": ["C", "D"]`. Is the new graph a tree? If so, which node is the root?
 
