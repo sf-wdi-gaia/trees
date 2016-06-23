@@ -205,37 +205,13 @@ Assume you have a tree data structure. As a special bonus operation not always a
 1. Create a trie for the following word list: ["hey", "hi", "yo"].
 
   <details><summary>click for solution</summary>
- 
-	```
-	        							<start>
-	           /												\
-	           H												 Y
-	         /   \												\
-	        E     I <end of word>					 O <end of word>
-	       /
-	      Y <end of word>
-	```
+ 	<img src="https://cloud.githubusercontent.com/assets/3254910/16308150/b00883ee-3918-11e6-9da2-740a07831189.png" width="300px">
   </details>
 
 1. How would you add the phrase "hello, govnuh" to your trie from above?
 
   <details><summary>click for solution</summary>
-  ```
- 	       <start>
-	           |
-	           H
-	         /   \
-	        E     I <end of word>
-	       / \
-	      L    Y <end of word>
-	     /
-	    L
-	   /
-	  O
-	 /
-	<space>
-	```
-  *"Yo" and rest of answer omitted for space.*
+  	<img src="https://cloud.githubusercontent.com/assets/3254910/16308174/c702bff6-3918-11e6-91c6-936728cba7ae.png" width="300px">
   </details>
   
 1. What determines the height of a trie?  
