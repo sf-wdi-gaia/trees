@@ -15,7 +15,7 @@ What's happening in that animation?
 ```
 node queue starts out with just root:
 	[a]
-enqueue first item's children; dequeue first item:
+enqueue first item's (unvisited) children; dequeue first item:
 	[b, c]			=> a
 enqueue first item's children; dequeue first item:
 	[c, d, e]		=> b
