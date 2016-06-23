@@ -35,6 +35,8 @@ Assume you have a binary search tree data structure.
 
  b) As a first step to automating your book selection process, pseudocode a `max`function to find the book in the tree with the highest rating. Your function should take the tree as its only argument.
  
+1. For the book problem above, how does using a binary search tree compare to using a sorted array?  Does it matter whether the binary search tree is balanced?
+ 
  
 ### Tree Tasks
 
