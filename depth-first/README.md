@@ -18,7 +18,7 @@ What's happening in that animation?
 ```
 node stack starts with just the root:  
 	[1]
-visit the last node, pushing its children to the stack (child order reversed to match gif but either works): 
+visit the last node, pushing its children to the stack (added right to left to match gif but either works): 
 	[1, 9, 5, 2]  
 visit the last node, pushing its children to the stack:
 	[1, 9, 5, 2, 3]
@@ -26,13 +26,17 @@ visit the last node, pushing its children to the stack:
 	[1, 9, 5, 2, 3, 4]
 visit the last node, but it has no unvisited children. so pop it out
 	[1, 9, 5, 2, 3] 	=> 4
-visit the last node, but it has no unvisited children. so pop it out
+keep repeating until the stack is empty: 
 	[1, 9, 5, 2]  		=> 3
-visit the last node, but it has no unvisited children. so pop it out
 	[1, 9, 5]  			=> 2
-visit the last node, pushing its children to the stack:
-	[1, 9, 5, 6, 8]  
-... and so on until the stack is empty!
+	[1, 9, 5, 8, 6]
+	[1, 9, 5, 8]  		=> 6
+	[1, 9, 5]			=> 8
+	[1, 9]				=> 5
+	[1, 9, 10]
+	[1, 9]				=> 10
+	[1] 				=> 9
+	[]				=> 1
 ```
 
 
