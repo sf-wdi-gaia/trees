@@ -14,6 +14,12 @@ Operations for a graph:
 * given a vertex, find all *adjacent* vertices (nodes it's connected to by an edge)
 * given an edge, find the two nodes it connects (and know which is the start node, if the edge is directed)
 
+Some uses of graphs:
+* find routes for visiting multiple cities (nodes are cities; edges are roads)
+* social networks (nodes are users; edges represent friendship)
+* planning what order to take classes in based on prerequisites (nodes are classes; directed edges represent prerequisite relationship)
+
+
 <hr>
 
 #### Tree
@@ -33,6 +39,11 @@ Operations for a tree:
   * get the key of a given node
   * get an array of all the nodes that are children of a given node
 
+
+Some uses of trees:
+* the DOM tree for HTML structure
+* record possible results of a sequence of decisions in a decision tree
+* probability trees for possible results of sequences of random coin flips or dice rolls
 
 <hr>
 
@@ -58,6 +69,11 @@ Operations for a binary search tree:
   * get the key of a given node
   * get the right child node of a given node (or `None` if there isn't one!)
   * get the left child node of a given node (or `None` if there isn't one)
+  
+
+Some uses of binary search trees:
+* store data in a sorted order
+* accommodate frequent additions and deletions
 
 <hr>
 
@@ -80,6 +96,11 @@ Operations for a trie:
   * given any node, get a boolean that will be true if the node is the end of a word
   * given any node, get an array of all the nodes that are its children
   
+
+Some uses of tries:
+ * spell checking
+ * autocomplete
+  
 <hr>
 
 #### Breadth First Tree Traversal
@@ -93,7 +114,9 @@ Operations for a trie:
   * implemented with a queue to track which node to visit next
  
 
-
+Some Uses of Breadth First Traversal:
+* find all friends-of-friends (in graph)
+* check if a binary tree is balanced
 
 <hr>
 
@@ -105,6 +128,8 @@ Operations for a trie:
  * can search for many keys, search by criteria that aren't based on keys, and keep track of depth
  * implemented with a stack to track which node to visit next, or implemented recursively
 
-
+Some uses of Depth First Tree Traversal:
+* print out all possible sequences of results for 4 coin flips
+* find the longest possible path from the root to any leaf in a tree 
 
 
